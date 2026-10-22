@@ -1,0 +1,33 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Build output (firmware builds belong in their own repos, release images in LFS)
+build/
+obj/
+*.o
+
+# SITL runtime files
+sitl/**/logs/
+sitl/**/terrain/
+sitl/**/eeprom.bin
+sitl/**/mav.parm
+
+# Temporary and export files
+*.tmp
+*.bak
+*.log

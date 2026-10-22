@@ -1,0 +1,40 @@
+# Normalise line endings for text files
+* text=auto
+
+# Blackbox flight logs
+*.bbl filter=lfs diff=lfs merge=lfs -text
+*.bfl filter=lfs diff=lfs merge=lfs -text
+*.BBL filter=lfs diff=lfs merge=lfs -text
+*.BFL filter=lfs diff=lfs merge=lfs -text
+
+# ArduPilot / INAV dataflash logs
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.BIN filter=lfs diff=lfs merge=lfs -text
+*.tlog filter=lfs diff=lfs merge=lfs -text
+
+# Logic analyser captures (sigrok / PulseView, Saleae)
+*.sr filter=lfs diff=lfs merge=lfs -text
+*.sal filter=lfs diff=lfs merge=lfs -text
+
+# Video and gyro data (DJI O4, Gyroflow)
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.MP4 filter=lfs diff=lfs merge=lfs -text
+*.mov filter=lfs diff=lfs merge=lfs -text
+*.MOV filter=lfs diff=lfs merge=lfs -text
+*.gcsv filter=lfs diff=lfs merge=lfs -text
+*.gyroflow filter=lfs diff=lfs merge=lfs -text
+
+# Firmware images
+*.hex filter=lfs diff=lfs merge=lfs -text
+*.elf filter=lfs diff=lfs merge=lfs -text
+
+# Photos (screenshots and diagrams as PNG/SVG stay in normal git)
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.JPG filter=lfs diff=lfs merge=lfs -text
+*.JPEG filter=lfs diff=lfs merge=lfs -text
+*.heic filter=lfs diff=lfs merge=lfs -text
+*.HEIC filter=lfs diff=lfs merge=lfs -text
+
+# Configuration snapshots are plain text and should diff normally
+config/** text eol=lf
