@@ -8,7 +8,9 @@ Transportstyrelsen (the Swedish Transport Agency). All flying is planned in the 
 | Step | Status | Date | Notes |
 | --- | --- | --- | --- |
 | UAS operator registration | Done | 2026-10-27 | Registered as a private operator via Transportstyrelsen's e-service (Drönarsidan). Renewed yearly. |
-| Operator ID on all camera drones | To do | | Public part of the ID only, see below. |
+| Operator ID on Visuo XS809HW | Done | 2026-10-27 | Public part of the ID only, see below. |
+| Operator ID on 5" quad | To do | | When built. |
+| Operator ID on cinewhoop | To do | | When delivered. |
 | Remote pilot certificate A1/A3 | To do | | Online training and theory test. Required for the 5" quad (> 250 g). |
 | Remote pilot certificate A2 | To do | | Not required for these aircraft, taken for the competence. |
 | Liability insurance | To do | | Check coverage for drones > 250 g, or via a model flying club. |
