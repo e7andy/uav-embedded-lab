@@ -13,7 +13,7 @@ Transportstyrelsen (the Swedish Transport Agency). All flying is planned in the 
 | Operator ID on cinewhoop | To do | | When delivered. |
 | Remote pilot certificate A1/A3 | To do | | Online training and theory test. Required for the 5" quad (> 250 g). |
 | Remote pilot certificate A2 | To do | | Not required for these aircraft, taken for the competence. |
-| Liability insurance | To do | | Check coverage for drones > 250 g, or via a model flying club. |
+| Liability insurance | To do | | Via club membership, see below. |
 
 ## Aircraft and subcategories
 
@@ -54,6 +54,28 @@ The chosen limit and the test that verifies it are documented in `config/cinewho
 - Only the **public part** is displayed. The three secret characters after the hyphen
   are never shown on the aircraft, in photos or in this repository.
 
+## Insurance
+
+There is no EU insurance requirement for drones below 20 kg, and no additional Swedish
+requirement has been found for this weight class. Liability for damage to third parties
+remains with the operator regardless, and home insurance policies often exclude motorised
+aircraft. Since the operator is registered privately, a company policy is not assumed to apply.
+
+Plan: liability insurance through a model flying club affiliated with Sveriges Modellflygförbund
+(SMFF). The SMFF membership includes liability insurance, provided that:
+
+- the SMFF safety rules are accepted, and
+- the operator ID has been submitted to the club.
+
+The chosen club also gives access to an FPV field (meeting the A3 distance requirements) and
+indoor sessions for small quads.
+
+Open questions for the club before joining:
+
+- Does the insurance apply only at the club's fields, or to all flying within the rules?
+- What is the insured amount?
+- Is there an introduction or check flight for new FPV pilots?
+
 ## Remote ID
 
 Direct Remote ID is required for drones with class labels C1–C3 in the open category and for
@@ -67,3 +89,4 @@ Remote ID (ASTM F3411 / EN 4709-002, OpenDroneID) is a possible later experiment
 
 - [Transportstyrelsen – Drönare](https://www.transportstyrelsen.se/dronare)
 - [EASA – Open category](https://www.easa.europa.eu/en/node/119320)
+- [EASA – Drone insurance](https://easa.europa.eu/en/light/topics/drone-insurance)
