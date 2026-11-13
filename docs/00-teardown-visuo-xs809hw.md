@@ -16,14 +16,16 @@ compare it with a proper STM32-based flight controller running open firmware.
 | Size | 325 × 325 × 60 mm unfolded, 190 × 140 × 60 mm folded |
 | Camera | 2 MP, 720p, 120° FOV, Wi-Fi live view to phone app |
 | Control link | 2.4 GHz handheld transmitter |
-| Battery | 1S 3.7 V 900 mAh LiPo |
+| Battery | 1S 3.7 V LiPo with built-in micro-USB charging: 1 × 900 mAh, 5 × 1200 mAh |
 | Features | Barometric altitude hold, auto take-off/landing, three speed modes, flips |
 
 ## Safety first
 
-- [ ] Inspect the battery for swelling or damage. A swollen pack is **not** charged; it is
-      discharged and recycled.
-- [ ] Measure the resting cell voltage: ___ V. Below 3.0 V the pack is considered unsafe to charge.
+- [x] Inspect the battery for swelling or damage. A swollen pack is **not** charged; it is
+      discharged and recycled. Done 2026-11-13: the 900 mAh pack was slightly swollen and is retired.
+- [x] Measure the resting cell voltage: 3.76–4.09 V on all six packs. Below 3.0 V the pack is
+      considered unsafe to charge. See
+      [test-data/2026-11-13-visuo-xs809hw-batteries](../test-data/2026-11-13-visuo-xs809hw-batteries/NOTES.md).
 - [ ] Remove the battery before opening the airframe.
 
 ## Teardown log
