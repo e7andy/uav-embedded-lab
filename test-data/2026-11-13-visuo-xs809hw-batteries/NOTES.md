@@ -47,7 +47,7 @@ millimetres for the first digit pair and millimetres for the rest.
 
 ## Charge board
 
-The board on each pack is marked `HJ-XS809DC` with the date 2017-08-13. It carries:
+The board on each pack is marked `HJ-XS806DC` with the date 2017-08-13. It carries:
 
 - a micro-USB connector for charging
 - solder pads marked `B+` and `B-` for the cell
@@ -76,7 +76,7 @@ voltages are left for the teardown.
 
 ![Charge board, component side](../../docs/images/00-teardown-battery-charger-bottom.jpg)
 
-*Charge board marked HJ-XS809DC 2017-08-13, with the micro-USB connector and the cell leads.*
+*Charge board marked HJ-XS806DC 2017-08-13, with the micro-USB connector and the cell leads.*
 
 ![Charge board, connector side](../../docs/images/00-teardown-battery-charger-top.jpg)
 
