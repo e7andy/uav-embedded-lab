@@ -51,7 +51,7 @@ Read the markings on each chip (a magnifier or phone macro photo helps) and look
 | Wi-Fi / camera SoC | | | |
 | Motor drivers (MOSFETs) | | | |
 | Voltage regulator | | | |
-| Battery charge/protection IC (in the pack, micro-USB) | | | |
+| Battery charge/protection IC (in the pack, micro-USB) | Board HJ-XS809DC, IC not yet read | | |
 
 ## Bench measurements
 
