@@ -49,6 +49,7 @@ Read the markings on each chip (a magnifier or phone macro photo helps) and look
 | Wi-Fi / camera SoC | | | |
 | Motor drivers (MOSFETs) | | | |
 | Voltage regulator | | | |
+| Battery charge/protection IC (in the pack, micro-USB) | | | |
 
 ## Bench measurements
 

@@ -11,7 +11,7 @@ instructions for a specific battery or charger always take precedence over this 
 | 5" quad flight packs | LiPo | 6S | XT60 discharge connector, JST-XH balance lead |
 | Cinewhoop flight packs | LiHV | 3S | XT30 discharge connector, JST-XH balance lead |
 | Radio transmitter | Li-ion (18650) | 2 cells | Charged in the radio over USB-C |
-| Toy drone (teardown) | LiPo | 1S | Inspected and measured before any charging |
+| Toy drone (teardown) | LiPo | 1S | Charged over micro-USB on the pack itself (built-in charge and protection circuit), not with the balance charger. Inspected and measured before any charging. |
 | Goggles and other devices | Li-ion, built in | | Charged over USB-C as specified by the manufacturer |
 
 ### Voltages per cell
