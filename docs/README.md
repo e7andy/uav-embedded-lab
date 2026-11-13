@@ -10,3 +10,9 @@ Build notes, analyses and write-ups, written in Markdown.
   for example `02-build-5inch-stack-wiring.jpg`.
 - Screenshots and diagrams are saved as PNG or SVG. Photos as JPG (stored with Git LFS).
 - Link to logs, configuration and test data with relative paths instead of copying them here.
+- Reference documents that are not part of the learning plan have no number, for example
+  `battery-handling.md`.
+
+## Reference documents
+
+- [Battery handling](battery-handling.md): charging, storage, transport and disposal of lithium batteries

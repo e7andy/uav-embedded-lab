@@ -49,5 +49,7 @@ Each folder has its own README describing conventions for what goes there.
   (not `dump`), so the history shows only intentional changes.
 - **Large files in Git LFS.** Blackbox logs, logic analyser captures, video and large images
   are tracked with Git LFS (see `.gitattributes`). Run `git lfs install` once before cloning.
+- **Battery safety.** All lithium batteries are handled according to
+  [docs/battery-handling.md](docs/battery-handling.md).
 - **Every test has a note.** Logs and measurements are paired with a short Markdown note
   describing setup, firmware version, configuration and result.
