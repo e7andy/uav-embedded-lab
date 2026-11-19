@@ -33,15 +33,16 @@ degrades can be identified and retired.
 
 | ID | Chemistry | Cells | Capacity | Bought | Cycles | Internal resistance per cell (new) | Status |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| B3-01 | LiHV | 3S | 580 mAh | 2026-11 | 0 | | In use |
-| B3-02 | LiHV | 3S | 580 mAh | 2026-11 | 0 | | In use |
-| B3-03 | LiHV | 3S | 580 mAh | 2026-11 | 0 | | In use |
-| B3-04 | LiHV | 3S | 580 mAh | 2026-11 | 0 | | In use |
+| B3-01 | LiHV | 3S | 580 mAh | 2026-11 | 0 | 40 / 33 / 34 mΩ | In use |
+| B3-02 | LiHV | 3S | 580 mAh | 2026-11 | 0 | 44 / 51 / 43 mΩ | In use |
+| B3-03 | LiHV | 3S | 580 mAh | 2026-11 | 0 | 28 / 47 / 40 mΩ | In use |
+| B3-04 | LiHV | 3S | 580 mAh | 2026-11 | 0 | 25 / 29 / 37 mΩ | In use |
 
 Intake checks: [B3-01 – B3-04](../test-data/2026-11-19-cinewhoop-battery-intake/NOTES.md).
 
 Internal resistance is measured with the charger when the pack is new and then about every
-ten cycles. A clear rise, or one cell that differs from the others, is a sign of wear.
+ten cycles. The charger shows it only during a balance charge. Readings vary by up to about
+10 mΩ between attempts, so two readings are taken and averaged. A clear rise, or one cell that differs from the others, is a sign of wear.
 
 ## Receiving new batteries
 

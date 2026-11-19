@@ -47,8 +47,53 @@ pack minus cells 1–2):
   resolution the differences are close to the measurement uncertainty.
 - No swelling or damage seen.
 
-## Next
+## Internal resistance
 
-- Internal resistance per cell to be measured with the charger at the first charge and added to
-  the battery log.
-- Charge in LiHV mode only (4.35 V per cell).
+Measured with the balance charger at the start of a balance charge (LiHV, 3S, 0.6 A = 1C). The
+charger shows internal resistance only during balance charging, not in standby or storage mode,
+and the value appears some seconds after the charge has started. Values in mΩ per cell.
+
+| ID | Reading | Cell 1 | Cell 2 | Cell 3 |
+| --- | --- | --- | --- | --- |
+| B3-01 | 1 | 36 | 29 | 30 |
+| B3-01 | 2 | 43 | 36 | 37 |
+| B3-02 | 1 | 43 | 52 | 37 |
+| B3-02 | 2 | 45 | 50 | 48 |
+| B3-03 | 1 | 28 | 47 | 40 |
+| B3-04 | 1 | 25 | 29 | 37 |
+
+Baseline used in the battery log (mean of the readings per cell):
+
+| ID | Cell 1 | Cell 2 | Cell 3 | Pack mean |
+| --- | --- | --- | --- | --- |
+| B3-01 | 40 | 33 | 34 | 35 |
+| B3-02 | 44 | 51 | 43 | 46 |
+| B3-03 | 28 | 47 | 40 | 38 |
+| B3-04 | 25 | 29 | 37 | 30 |
+
+### Observations
+
+- Repeated readings of the same pack differ by up to about 10 mΩ per cell (B3-01 read about
+  7 mΩ higher on every cell the second time; one cell of B3-02 moved from 37 to 48 mΩ).
+- The difference between packs (30–46 mΩ pack mean) is of the same order as the repeatability,
+  so no pack can be singled out as weaker from these readings. B3-02 read highest both times
+  and is the first one to watch.
+- 25–52 mΩ per cell is a normal range for small 3S packs measured by a charger through the
+  balance lead, which includes lead and connector resistance.
+- The charger's reading is useful for trends rather than as an absolute value. A pack is
+  considered worn when its resistance has risen 50–100 % from this baseline, or when one cell
+  drifts clearly away from the others.
+
+### Method for later readings
+
+To keep readings comparable:
+
+- same charger and channel, pack at room temperature
+- balance lead firmly seated
+- read once the value has settled, about 20–30 s after the charge has started
+- take two readings and use the mean
+
+## After the check
+
+The charge was stopped at about 3.85 V per cell, so the packs stay at storage voltage until the
+first flight. Packs are charged in LiHV mode only (4.35 V per cell).
