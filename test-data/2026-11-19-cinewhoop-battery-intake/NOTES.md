@@ -95,5 +95,6 @@ To keep readings comparable:
 
 ## After the check
 
-The charge was stopped at about 3.85 V per cell, so the packs stay at storage voltage until the
-first flight. Packs are charged in LiHV mode only (4.35 V per cell).
+The packs were brought to storage voltage (3.85 V per cell) with the charger's storage mode, so
+they stay there until the first flight. See the
+[photo of the charger in storage mode](../../docs/images/battery-charger-storage-3s-lihv.jpg). Packs are charged in LiHV mode only (4.35 V per cell).

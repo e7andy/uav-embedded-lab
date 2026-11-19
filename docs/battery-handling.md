@@ -72,6 +72,13 @@ Measurements go in `test-data/YYYY-MM-DD-battery-intake/`.
 - **Adapters.** Only adapters with the correct polarity are used. A new or home-made adapter is
   checked with a multimeter before the first charge.
 
+![Two 3S LiHV packs in storage mode on the charger](images/battery-charger-storage-3s-lihv.jpg)
+
+*Two cinewhoop packs in storage mode: chemistry LiHV, 3S, target 3.85 V per cell, charged
+through XT60-to-XT30 adapters with the balance leads connected. The charger shows the lowest and
+highest cell voltage (3.825–3.832 V and 3.843–3.849 V), so the cells stay within 0.01 V of each
+other.*
+
 ## Flying
 
 - The flight controller shows battery voltage in the OSD. The flight is ended at about
