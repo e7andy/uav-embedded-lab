@@ -92,7 +92,10 @@ other.*
 - **Storage voltage** (3.80–3.85 V per cell for LiPo and LiHV) whenever the pack will not be
   flown within a day or two. Use the charger's storage mode.
 - **Fire-resistant container.** Packs are stored in a LiPo bag or a metal box with a lid that
-  is not airtight, so that gas can escape.
+  is not airtight, so that gas can escape. The lab uses a steel ammunition box (cal. 50, inner
+  size about 28 × 14 × 18 cm) with the rubber gasket removed from the lid. A sealed box would
+  build up pressure if a pack vents, which is more dangerous than a box that leaks. The box
+  stands on a non-flammable surface, away from paper and textiles.
 - **Cool and dry, room temperature.** Not in a car, a cold garage or direct sunlight.
 - **Connectors protected** so that they cannot short-circuit against each other or metal.
 - A smoke alarm in the room where batteries are stored and charged.
