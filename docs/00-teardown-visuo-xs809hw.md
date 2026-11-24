@@ -55,7 +55,7 @@ Read the markings on each chip (a magnifier or phone macro photo helps) and look
 
 ## Bench measurements
 
-Instruments: UNI-T UT161D multimeter, SparkFun 8-channel logic analyser (PulseView/sigrok).
+Instruments: UNI-T UT161D multimeter, home-built logic analyser on a Raspberry Pi Pico (gusmanb LogicAnalyzer or μLA with PulseView/sigrok, 3.3 V inputs).
 Raw captures go in `test-data/YYYY-MM-DD-visuo-xs809hw/`.
 
 - [ ] Supply rails (battery, 3.3 V, others): ___
