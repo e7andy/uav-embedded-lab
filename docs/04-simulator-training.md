@@ -45,12 +45,12 @@ configuration (`config/`) so that the real aircraft respond like the simulator.
 
 ## Training log
 
-Total time is accumulated simulator time. Lap or race times as shown by Liftoff
-(minutes:seconds.milliseconds).
+Total time is accumulated play time in Liftoff (from Steam). Race times are as shown by Liftoff
+(minutes:seconds.milliseconds). A race is two laps of the track.
 
 | Date | Total time | Track | Settings | Result | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-24 | 9 h | Short Circuit – 01 – Pole Position | 120 / 500 / 0.40, camera 10° | 6:34.504 | Completed with a few crashes |
+| 2026-11-24 | 9.8 h | Short Circuit – 01 – Pole Position | 120 / 500 / 0.40, camera 10° | 6:34.504 (race, 2 laps) | Completed with a few crashes |
 
 ## Next steps
 
