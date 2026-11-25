@@ -22,7 +22,7 @@ the flight controllers in this lab.
   the RP2350 GPIO errata can affect captures.
 - Breadboard, 400 points
 - Jumper wires, male/female, 15 cm, 10 pcs
-- Micro test clips with male dupont pin, 5 pcs
+- Micro test clips with male dupont pin, 10 pcs
 - Resistors 330 Ω, 0.25 W, 10 pcs
 - JST-SH 1.0 mm cable with open end, 6-pin (check the pin count against the flight controller)
 - Pin header, 2.54 mm, breakable
@@ -105,8 +105,8 @@ build a Y-cable later.
 | Gyro (SPI) | SCK, MOSI, MISO, CS (+ INT) | 4–5 |
 | Blackbox flash (SPI) | SCK, MOSI, MISO, CS | 4 |
 
-Every capture also needs a ground connection. Five test clips cover 4 signals plus ground;
-more clips are needed for 5-signal captures on pads.
+Every capture also needs a ground connection. Ten test clips cover every capture in the table
+with ground, with spares.
 
 ## First test
 
