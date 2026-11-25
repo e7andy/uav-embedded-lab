@@ -16,3 +16,4 @@ Build notes, analyses and write-ups, written in Markdown.
 ## Reference documents
 
 - [Battery handling](battery-handling.md): charging, storage, transport and disposal of lithium batteries
+- [Logic analyser](logic-analyser.md): build and use of the Pico-based logic analyser
