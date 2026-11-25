@@ -108,11 +108,59 @@ build a Y-cable later.
 Every capture also needs a ground connection. Ten test clips cover every capture in the table
 with ground, with spares.
 
-## First test
+## First test: UART from a micro:bit
 
-Before measuring on the drones: capture a known signal, for example UART output from another
-microcontroller at 115200 baud, and check that the decoder shows the expected bytes. Save the
-capture in `test-data/` as the first entry.
+Before measuring on the drones, the analyser is verified on a known signal. A BBC micro:bit is
+used as the source: it runs at 3.3 V like the Pico, so no level shifting is needed, and the
+transmitted data is fully under control.
+
+### Program (MakeCode)
+
+In [MakeCode](https://makecode.microbit.org):
+
+1. **on start:** `serial redirect to TX P0 RX P1 at baud rate 115200`
+   (Advanced → Serial).
+2. **forever:** `serial write line "Hello"`, then `pause (ms) 1000`.
+3. Optional: **on button A pressed** → `serial write line "A"`, and the same for B, so that
+   button presses show up in the capture.
+
+Flash by copying the `.hex` file to the MICROBIT drive.
+
+### Wiring
+
+| micro:bit | Logic analyser |
+| --- | --- |
+| GND | GND rail |
+| P0 (TX) | Channel 1, through a resistor lead |
+
+The large edge rings P0 and GND take crocodile clips or the micro test clips.
+
+### Capture and decode
+
+1. Sample rate at least 1 MHz (8–10 samples per bit at 115200 baud is plenty).
+2. Trigger on the falling edge of channel 1 (the UART start bit).
+3. Add a UART decoder: 115200 baud, 8 data bits, no parity, 1 stop bit (8N1), idle high.
+4. Expected result: `Hello` followed by CR LF once a second.
+
+### Further exercises
+
+- **Baud rate:** repeat at 9600 baud and compare the bit time (about 104 µs at 9600, 8.7 µs at
+  115200).
+- **Sensor data:** send accelerometer values with `serial write value`. This mirrors what the
+  flight controller does with gyro data, at a much lower rate.
+- **Wrong settings on purpose:** decode at the wrong baud rate or with inverted polarity and
+  note what the result looks like. Useful when debugging CRSF and other inverted or unusual
+  serial links later.
+
+Save the capture and a `NOTES.md` in `test-data/YYYY-MM-DD-logic-analyser-first-test/` as the
+first entry.
+
+### Alternatives
+
+- **Raspberry Pi:** enable the serial console (`raspi-config` → Interface Options → Serial
+  Port) and capture the boot messages on GPIO14 (pin 8) at 115200 baud. 3.3 V, no code needed.
+- **Arduino (5 V):** use a voltage divider before the Pico input, for example 330 Ω in series
+  and two 330 Ω to ground, giving about 3.3 V.
 
 ## Later: level-shifter board
 
